@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11pt;
+}
+
+body {
+    background-color: #fff;
+}
+
+.header {
+    background-color: #110639;
+    background-image: linear-gradient(to right, #012150, #421c5a, #720051, #960037, #a50a0a);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 3em;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo>img {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 5px;
+}
+
+.logo>h1 {
+    font-size: 25pt;
+    padding-left: 1rem;
+}
+
+.logo:hover {
+    /* transform: scale(1.1);
+    transition: all 0.5s; */
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 5px 1rem;
+    margin: 0;
+}
+
+header nav ul li a {
+    color: #fbf8ff;
+}
+
+header nav ul li a:hover {
+    color: #9c7fe8;
+}
+
+ul>li>a {
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+header button {
+    border-radius: 15px;
+    padding: 8px 15px;
+    color: #012150;
+    background-color: #f9b052;
+    cursor: pointer;
+    border: none;
+}
+
+header button:hover {
+    color: #fff;
+}
+
+.main {
+    height: 88vh;
+}
+
+footer {
+    background-color: #060e1a;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 3rem;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 11pt;
+}
+
+.title-footer {
+    color: #7d8186;
+    font-size: 13pt;
+    font-weight: 400;
+}
+
+.contactanos {
+    color: #fff;
+}
+
+.contactanos h3 {
+    font-size: 15pt;
+    padding-bottom: 5px;
+}
+
+.contactanos input {
+    border-radius: 3rem;
+    height: 2rem;
+    padding: 3px 7px;
+    border: none;
+}
+
+.contactanos button {
+    border-radius: 3rem;
+    height: 2rem;
+    padding: 3px 7px;
+    border: none;
+}
+
+.index {
+    color: #012150;
+    display: grid;
+    flex-direction: column;
+    align-items: end;
+}
+
+.index h2 {
+    font-size: 30pt;
+    opacity: 1.0;
+}
+
+.line {
+    background-color: #fff;
+    height: auto;
+    text-align: center;
+    padding: 2rem 1rem;
+    opacity: 0.7;
+}
+
+.index p {
+    font-size: 15pt;
+    opacity: 1.0;
+}
+
+.bg-image {
+    background-image: url("../img/student.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-size: 20pt;
+}
+
+.pages {
+    padding: 2rem;
+}
+
+.contenido {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    background-color: #eff3fa;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.card img {
+    height: 10em;
+    border-radius: 50%;
+}
+
+.card:hover {
+    background-color: #fdf5f5;
+}
+
+.card-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.card-form {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0 25em;
+    background-color: #e3eaf1;
+}
+
+.input {
+    padding: 10px 7px;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn {
+    background-color: #012150;
+    color: #fff;
+    cursor: pointer;
+}
+
+.email {
+    width: 100%;
+}
+
+select {
+    background-color: #fff;
+}
+
+/* .tabla {
+    border: solid #012150 1px;
+    border-radius: 1rem;
+    padding: 1rem;
+} */
+
+table {
+    border-collapse: collapse;
+    /* Fusionar los bordes de las celdas adyacentes */
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    /* Establecer bordes para las celdas */
+    padding: 8px;
+    /* Añadir espaciado interno a las celdas */
+}
+
+tr:nth-child(even) {
+    background-color: #fffade;
+    /* Establecer un color de fondo para las filas pares */
+}
+
+tr:hover {
+    background-color: #e6e6e6;
+    /* Cambiar el color de fondo al pasar el mouse por una fila */
+}
+
+th {
+    background-color: #995252;
+    /* Establecer un color de fondo para los encabezados de columna */
+    font-weight: bold;
+    /* Hacer que los encabezados de columna sean negrita */
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    /* Alinear el texto del encabezado a la izquierda */
+}
+
+th:first-child,
+td:first-child {
+    width: 50px;
+    /* Establecer un ancho específico para la primera columna */
+}
+
+th:last-child,
+td:last-child {
+    width: 100px;
+    /* Establecer un ancho específico para la última columna */
+}
